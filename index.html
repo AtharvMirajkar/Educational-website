@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Website Design</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section>
+        <div class="header">
+            <nav>
+                <a href="index.html"><img src="images/logo.png" alt="logo"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Course</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                    
+                </div>
+                <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+            </nav>
+
+            <div class="text-box">
+                <h1>Worlds Biggest University</h1>
+                <p>The website which is made up by HTML, CSS, JavaSccript</p>
+                <a href="" class="hero-btn">Visit us to know more</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Course -->
+
+    <section class="course">
+        <h1>Courses we offered</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+        <div class="row">
+            <div class="course-col">
+                <h3>Intermediate</h3>
+                <p>Illo sit dolor sapiente porro, libero tempore iusto. Ducimus ad at sit ipsa dolorem maiores saepe dolor repudiandae? Dicta consectetur similique fuga! Sed, accusamus nam. Impedit, nostrum blanditiis a animi possimus accusantium incidunt dicta consequuntur culpa illo.</p>
+            </div>
+            <div class="course-col">
+                <h3>Degree</h3>
+                <p>Illo sit dolor sapiente porro, libero tempore iusto. Ducimus ad at sit ipsa dolorem maiores saepe dolor repudiandae? Dicta consectetur similique fuga! Sed, accusamus nam. Impedit, nostrum blanditiis a animi possimus accusantium incidunt dicta consequuntur culpa illo.</p>
+            </div>
+            <div class="course-col">
+                <h3>Postgraduation</h3>
+                <p>Illo sit dolor sapiente porro, libero tempore iusto. Ducimus ad at sit ipsa dolorem maiores saepe dolor repudiandae? Dicta consectetur similique fuga! Sed, accusamus nam. Impedit, nostrum blanditiis a animi possimus accusantium incidunt dicta consequuntur culpa illo.</p>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Facilites -->
+    <section class="facilities">
+        <h1>Our Facility</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, illo!</p>
+
+        <div class="row">
+            <div class="facilites-col">
+                <img src="/images/library.png" alt="">
+                <h3>World Class Library</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+        
+
+        
+            <div class="facilites-col">
+                <img src="/images/basketball.png" alt="">
+                <h3>Largest Playground</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+        
+
+       
+            <div class="facilites-col">
+                <img src="/images/cafeteria.png" alt="">
+                <h3>Tasty and Healthy food</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+       
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Javascript for toggle menu -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu(){
+            navLinks.style.top = "0";
+
+        }
+
+        function hideMenu(){
+            navLinks.style.top = "-800px";
+
+        }
+    </script>
+</body>
+</html>
